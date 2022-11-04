@@ -1,0 +1,298 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav{
+    position: fixed;
+    width: 100%;
+    padding: 15px 8%;
+    background: rgba(255, 255, 255, 0.5);
+    z-index: 999;
+}
+
+.navigation{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+
+.navigation li{
+    margin-right: 35px;
+}
+
+.navigator{
+    display: flex;
+}
+
+.burgerMenu{
+    visibility: hidden;
+}
+
+.burgerMenu .bars{
+    width: 30px;
+    height: 4px;
+    margin-bottom: 5px;
+    background-color: #444;
+    border-radius: 5px;
+}
+
+.logo{
+    font-size: 40px;
+}
+
+.sidebar{
+    position: fixed;
+    width: 300px;
+    background-color: rgba(255, 255, 255, 0.5);
+    height: 100%;
+    top: 76px;
+    right: -300px;
+    transition: 1s;
+    padding-left: 30px;
+    padding-top: 20px;
+}
+
+.sidebar.active{
+    right: 0;
+}
+
+.sidebar ul{
+    list-style: none;
+}
+
+.sidebar ul li{
+    margin-top: 20px;
+}
+
+.banner{
+    background: url(banner.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+ul li a{
+    text-decoration: none;
+    color: #000;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    padding: 2%;
+}
+
+.categori{
+    width: 35%;
+    padding: 5px 10px;
+    box-shadow: 1px 2px 2px 1px rgba(0, 0, 0, 0.2);    
+}
+
+.menu{
+    width: 60%;
+    padding: 5px 10px;
+}
+
+.menu h1{
+    margin-left: 70px;
+}
+
+
+.menus{
+    list-style: none;
+    margin-top: 20px;
+}
+
+.menus  li{
+    margin-bottom: 30px;
+}
+
+.content{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    row-gap: 20px;
+    box-shadow: 1px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    margin-top: 25px;
+}
+
+.card{
+    text-align: center;
+}
+
+.card img{
+    width: 300px;
+    height: 200px;
+}
+
+.dicoret{
+    text-decoration: line-through;
+    color: gray;
+}
+
+span{
+    margin-left: 100px;
+}
+
+.contentKategori{
+    margin-top: 30px;
+}
+
+.contentKategori .card{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.contentKategori .card img{
+    width: 150px;
+    height: 150px;
+    margin-right: 20px;
+}
+
+.indexFooter{
+    background-color: #444;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+}
+
+.indexFooter ul{
+    display: flex;
+}
+
+.indexFooter ul li{
+    margin-right: 20px;
+    list-style: none;
+}
+
+.indexFooter ul i{
+    color: white;
+    font-size: 30px;
+}
+
+.containerMenu .listMenu{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    row-gap: 40px;
+}
+
+.containerMenu .menuTitle{
+    text-align: center;
+    margin: 20px 0;
+}
+
+.containerMenu .listMenu .card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    overflow: hidden;
+    width: 300px;
+}
+
+.rating{
+    display: flex;
+    list-style: none;
+    color: gold;
+}
+
+.listMenu .card img:hover{
+    transform: scale(1.1);
+    transition: 2s;
+}
+
+.footerMenu{
+    display: flex;
+    justify-content: space-around;
+    background-color: #444;
+    margin-top: 40px;
+    padding: 30px 0;
+}
+
+.footerMenu ul{
+    list-style: none;
+}
+
+.footerMenu ul li{
+    margin-bottom: 10px;
+}
+
+.footerMenu ul li a, .footerMenu ul li i{
+    color: #fff;
+}
+
+.footerMenu .footer1 ul{
+    display: flex;
+}
+
+.footerMenu .footer1 ul li{
+    margin-right: 20px;
+}
+
+.containerContact{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: grey;
+}
+
+.containerContact .card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: darkslategray;  
+    padding: 20px;
+}
+
+.containerContact .card input{
+    margin-bottom: 20px;
+    border: none;
+    outline: none;
+    padding: 20px;
+}
+
+.containerContact .card textarea{
+    margin-bottom: 20px;
+    border: none;
+    outline: none;
+    padding: 20px;
+
+
+
+
+
+
+
+
+
+
+@media(max-width:780px) {
+
+    .navigator{
+        visibility: hidden;
+    }
+
+    .burgerMenu{
+        visibility: visible;
+    }
+}
+
